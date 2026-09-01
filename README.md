@@ -8,3 +8,9 @@ Dimensions: 545 x 442 x 263 mm
 
 [Breville Pizzaiolo](https://www.breville.com/en-us/product/bpz820?sku=BPZ820BSS1BUC1)\
 Dimensions: 18.1" x 18.5" x 10.6"
+
+## Goals
+1. Have a working oven that can cook pizza
+2. Oven temp stability within 10F of set temp
+3. Reach 850F+ for Neapolitan pizza
+4. Accurate sensing of pizza completion (within 5% of proper cook)
