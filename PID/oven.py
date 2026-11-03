@@ -10,7 +10,7 @@ class Thermocouple:
         self.tau = tau
         self.noise_std = noise_std
         self.sensor_temp = oven.air_temp
-        self.offset = random.uniform(-2.0, 2.0) #simulates the error of the TC
+        self.offset = random.uniform(-2, 2) #simulates the error of the TC
         #The amplifiers are not considered since they are way better in terms of
         #error than the TC's
 
@@ -39,13 +39,13 @@ class HeatingElement:
 
 
 class Oven:
-    def __init__(self):
+    def __init__(self, top_temp = 25.0, air_temp = 25.0, bottom_temp = 25.0, ambient = 25.0):
 
         # intial conditions
-        self.top_temp = 25.0
-        self.air_temp = 25.0
-        self.bottom_temp = 25.0
-        self.ambient = 25.0
+        self.top_temp = top_temp
+        self.air_temp = air_temp
+        self.bottom_temp = bottom_temp
+        self.ambient = ambient
 
         self.top_element = HeatingElement(1500)
         self.bottom_element = HeatingElement(1500)
@@ -106,15 +106,45 @@ class PID:
         return max(self.output_min, min(self.output_max, output))
 
 
+def evaluate_response(time_log, actual_log, setpoint):
+
+    peak_temp = max(actual_log)
+    overshoot = max(0, (peak_temp - setpoint) / setpoint * 100)
+
+    peak_time = time_log[actual_log.index(peak_temp)]
+
+    final_temp = actual_log[-1]
+
+    steady_state_error = (setpoint - final_temp)
+
+    print("===== RESPONSE =====")
+    print(f"Peak Temp: "f"{peak_temp:.2f}")
+    print(f"Overshoot: "f"{overshoot:.2f}%")
+    print(f"Peak Time: "f"{peak_time:.2f}s")
+    print(f"Steady-State Error: "f"{steady_state_error:.2f}F")
+
+
+
 if __name__ == "__main__":
 
-    oven = Oven()
-    pid = PID(kp = 0.01, ki = 0.0001, kd = 0.05)
+    # Adjust the initial conditions
+    START_TEMP = 25
+    TARGET_TEMP = 500
 
+    # Set up the simulation
+    oven = Oven(air_temp = START_TEMP)
+    pid = PID(kp = 0.01, ki = 0, kd = 0.05)
     dt = 1.0
-    simulation_time = 1200
-    setpoint = 500
+    simulation_time = 1800
+    setpoint = TARGET_TEMP
 
+    # Log the data to plot it
+    time_log = []
+    actual_log = []
+    measured_log = []
+    power_log = []
+
+    i = 0
     for t in range(simulation_time):
         measured_temp = oven.tc.read()
 
@@ -122,9 +152,33 @@ if __name__ == "__main__":
         oven.set_heat(power, 0.5)
         oven.update(dt)
 
-        print(f"{t}s | " f"Actual={oven.air_temp:.1f}F | " f"Measured={measured_temp:.1f}F | "f"Power={power:.2f}")
+        time_log.append(t)
+        actual_log.append(oven.air_temp)
+        measured_log.append(measured_temp)
+        power_log.append(power)
 
+        if (i == 9):
+            print(f"{t}s | " f"Actual={oven.air_temp:.1f}F | " f"Measured={measured_temp:.1f}F | "f"Power={power:.2f}")
+            i = 0
+        else:
+            i += 1
+
+    # PLOTTING THE STUFFS
+    fig, ax1 = plt.subplots()
+
+    plt.title(label = f"Heat Control from {START_TEMP}F to {TARGET_TEMP}F")
+    ax1.plot(time_log, actual_log, label="Actual Temp", color="blue") # Actual oven temps
+    ax1.plot(time_log, measured_log, '--', label="Measured Temp", color="green") # Temps seen by the PID loop
+    ax1.axhline(setpoint, color="red", linestyle=":") # Target Line
+    ax1.set_xlabel("Time (s)")
+    ax1.set_ylabel("Temperature (F)")
+    ax2 = ax1.twinx()
+    ax2.plot(time_log, power_log, color="orange", label="Power") # Power output of the system
+    ax2.set_ylabel("Power")
+    plt.show()
+
+    evaluate_response(time_log, actual_log, setpoint)
     # UI with graph for current oven temperature (use qt)
-    # Run 10x as fast as normal
+    # Run 10x as fast as normal button
     # Collect data like overshoot, tau, etc... see ee380 notes
     # ability to set target in simulation
