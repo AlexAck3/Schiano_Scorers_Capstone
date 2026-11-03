@@ -1,4 +1,5 @@
 import random
+import matplotlib.pyplot as plt
 
 
 
@@ -24,7 +25,7 @@ class Thermocouple:
 
     
 class HeatingElement:
-    def __init__(self, max_power_watts):
+    def __init__(self, max_power_watts = 1500):
         self.max_power = max_power_watts
         self.output = 0.0   #simulates the duty cycle
 
@@ -50,7 +51,7 @@ class Oven:
         self.bottom_element = HeatingElement(1500)
         self.tc = Thermocouple(self)
 
-        self.stone_mass = 10000 #CHANGE ME
+        self.stone_mass = 1000 #CHANGE ME
         self.air_mass = 500 #CHANGE ME
 
     def update(self, dt):
@@ -107,9 +108,23 @@ class PID:
 
 if __name__ == "__main__":
 
-    print("Da code is running, better catch it!")
-
     oven = Oven()
     pid = PID(kp = 0.01, ki = 0.0001, kd = 0.05)
-    
 
+    dt = 1.0
+    simulation_time = 1200
+    setpoint = 500
+
+    for t in range(simulation_time):
+        measured_temp = oven.tc.read()
+
+        power = pid.update(setpoint, measured_temp, dt)
+        oven.set_heat(power, 0.5)
+        oven.update(dt)
+
+        print(f"{t}s | " f"Actual={oven.air_temp:.1f}F | " f"Measured={measured_temp:.1f}F | "f"Power={power:.2f}")
+
+    # UI with graph for current oven temperature (use qt)
+    # Run 10x as fast as normal
+    # Collect data like overshoot, tau, etc... see ee380 notes
+    # ability to set target in simulation
