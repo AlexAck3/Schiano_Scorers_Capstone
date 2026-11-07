@@ -6,17 +6,18 @@ https://learn.sparkfun.com/tutorials/raspberry-pi-spi-and-i2c-tutorial/all#spi-o
     - Just do the Desktop GUI steps
 
 Step 2 - Install everything for TC AMPs
-    Install Adafruit CircuitPython
-    https://learn.adafruit.com/adafruit-max31856-thermocouple-amplifier/python-circuitpython#circuitpython-installation-of-max31856-library-3042592
-
     Install Python Packages
     https://learn.adafruit.com/adafruit-max31856-thermocouple-amplifier/python-circuitpython#python-installation-of-max31856-library-3042593
         pip3 install adafruit-circuitpython-max31856    
 
 Step 3 - Install everything for IR Camera
+    https://shillehtek.com/blogs/shillehtek-product-manuals/gy-906-mlx90614-baa-non-touch-infrared-temperature-sensor#manual-section-5
     Install: pip install smbus2 mlx90614
 
 '''
+
+# NOTE: ALL TEMPERATURE READINGS ARE IN C NOT F
+
 SPI = 0
 I2C = 1
 BOTH = 2
