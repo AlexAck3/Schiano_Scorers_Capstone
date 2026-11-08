@@ -69,8 +69,9 @@ def Read_SPI():
     spi = board.SPI()
 
     # allocate a CS pin and set the direction
-    cs = digitalio.DigitalInOut(board.D5)
+    cs = digitalio.DigitalInOut(board.D8)
     cs.direction = digitalio.Direction.OUTPUT
+    cs.value = True
 
     # create a thermocouple object with the above
     thermocouple = adafruit_max31856.MAX31856(spi, cs)
