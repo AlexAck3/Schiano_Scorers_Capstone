@@ -14,7 +14,10 @@ Step 3 - Install everything for IR Camera
     https://shillehtek.com/blogs/shillehtek-product-manuals/gy-906-mlx90614-baa-non-touch-infrared-temperature-sensor#manual-section-5
     Install: pip install smbus2 mlx90614
 
-'''
+#chat firmly believes the package pymlx90614 is the solution to this not wokring
+    
+    
+    '''
 
 # NOTE: ALL TEMPERATURE READINGS ARE IN C NOT F
 
@@ -25,7 +28,7 @@ BOTH = 2
 SETTING = SPI   # Which one do you want to read?
 
 from smbus2 import SMBus
-from mlx90614 import MLX90614
+#from mlx90614 import MLX90614
 import time
 
 import board
