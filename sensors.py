@@ -78,7 +78,7 @@ def Read_SPI():
     # print the temperature!
     while True:
         print("TC Reading")
-        print(f"\tObject:\t{thermocouple.temperature}")
+        print(f"\tObject:\t{thermocouple.temperature:.4F}")
         print("-" * 30)
 
         time.sleep(0.5)
