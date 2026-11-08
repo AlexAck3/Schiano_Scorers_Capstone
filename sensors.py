@@ -43,12 +43,12 @@ import adafruit_max31856
 # NOTE: Use "i2cdetect -y 1" to find the value of I2C_ADDR
 def Read_I2C():
     bus = SMBus(1)
-    sensor = MLX90614(bus, address=0x5A)
+ #   sensor = MLX90614(bus, address=0x5A)
 
     try:
         while True:
-            print(f"Ambient: {sensor.get_ambient():.2f} C")
-            print(f"Object:  {sensor.get_object_1():.2f} C")
+  #          print(f"Ambient: {sensor.get_ambient():.2f} C")
+  #          print(f"Object:  {sensor.get_object_1():.2f} C")
             print("-" * 30)
             time.sleep(0.5)
     except KeyboardInterrupt:
@@ -87,7 +87,7 @@ def Read_SPI():
 def Read_data():
     try:
         bus = SMBus(1)
-        sensor = MLX90614(bus, address=0x5A)
+#        sensor = MLX90614(bus, address=0x5A)
 
         # Create sensor object, communicating over the board's default SPI bus
         spi = board.SPI()
@@ -102,8 +102,8 @@ def Read_data():
         while True:
             print("-" * 30)
             print("IR Reading")
-            print(f"\tAmbient:\t{sensor.get_ambient():.2f} C")
-            print(f"\tObject:\t{sensor.get_object_1():.2f} C")
+  #          print(f"\tAmbient:\t{sensor.get_ambient():.2f} C")
+    #        print(f"\tObject:\t{sensor.get_object_1():.2f} C")
             print("-" * 30)
         
             # print the temperature!
