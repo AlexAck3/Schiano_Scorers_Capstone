@@ -25,10 +25,10 @@ SPI = 0
 I2C = 1
 BOTH = 2
 
-SETTING = SPI   # Which one do you want to read?
+SETTING = I2C   # Which one do you want to read?
 
 from smbus2 import SMBus
-#from mlx90614 import MLX90614
+from mlx90614 import MLX90614
 import time
 
 import board
@@ -43,12 +43,12 @@ import adafruit_max31856
 # NOTE: Use "i2cdetect -y 1" to find the value of I2C_ADDR
 def Read_I2C():
     bus = SMBus(1)
- #   sensor = MLX90614(bus, address=0x5A)
+    sensor = MLX90614(bus, address=0x5A)
 
     try:
         while True:
-  #          print(f"Ambient: {sensor.get_ambient():.2f} C")
-  #          print(f"Object:  {sensor.get_object_1():.2f} C")
+            print(f"Ambient: {sensor.get_amb_temp():.2f} C")
+            print(f"Object:  {sensor.get_obj_temp():.2f} C")
             print("-" * 30)
             time.sleep(0.5)
     except KeyboardInterrupt:
