@@ -26,9 +26,9 @@ I2C = 1
 BOTH = 2
 PWM = 3
 # ------ PWM Options ------
-PWM_PERIOD = 5      # s
+PWM_PERIOD = 30     # s
 PWM_DUTYCYCLE = 50  # %
-TOP_COIL_PCT = 50   # %
+TOP_COIL_PCT = 10   # %
 BOT_COIL_PCT = 100 - TOP_COIL_PCT
 # -------------------------
 
