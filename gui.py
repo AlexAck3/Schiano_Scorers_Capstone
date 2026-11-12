@@ -130,7 +130,10 @@ class PizzaOvenGUI(QWidget):
         # 3) Temperature reading (not selectable, no user input needed) - Direct TC Feedback
         layout.addWidget(self.make_label("Temperature Reading"))
         self.reading_entry = self.make_entry()
-        self.reading_entry.setEnabled(False)
+        self.reading_entry.setReadOnly(True)
+        self.reading_entry.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.reading_entry.setCursor(Qt.CursorShape.ArrowCursor)
+        self.reading_entry.setStyleSheet("QLineEdit { border: none; background: transparent; }")
         layout.addWidget(self.reading_entry)
 
         # 4) Timer - Allows user to modify how much time to cook pizza
@@ -142,7 +145,10 @@ class PizzaOvenGUI(QWidget):
         layout.addLayout(box)
 
         box, self.bottom_entry = self.make_control("Bottom Coil")
-        self.bottom_entry.setEnabled(False)
+        self.bottom_entry.setReadOnly(True)
+        self.bottom_entry.setFocusPolicy(Qt.FocusPolicy.NoFocus)
+        self.bottom_entry.setCursor(Qt.CursorShape.ArrowCursor)
+        self.bottom_entry.setStyleSheet("QLineEdit { border: none; background: transparent; }")
         layout.addLayout(box)
 
         layout.addStretch()
