@@ -32,7 +32,7 @@ TOP_COIL_PCT = 50   # %
 BOT_COIL_PCT = 100 - TOP_COIL_PCT
 # -------------------------
 
-SETTING = PWM   # Which one do you want to read?
+SETTING = SPI   # Which one do you want to read?
 
 from smbus2 import SMBus
 from mlx90614 import MLX90614
@@ -113,8 +113,8 @@ def Read_data():
         while True:
             print("-" * 30)
             print("IR Reading")
-            print(f"\tAmbient:\t{sensor.get_ambient():.2f} C")
-            print(f"\tObject:\t{sensor.get_object_1():.2f} C")
+            print(f"\tAmbient:\t{sensor.get_amb_temp():.2f} C")
+            print(f"\tObject:\t{sensor.get_obj_temp():.2f} C")
             print("-" * 30)
         
             # print the temperature!
