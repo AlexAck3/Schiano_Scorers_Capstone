@@ -198,11 +198,17 @@ class PizzaOvenGUI(QWidget):
         if self.sel_index > 0:
             self.sel_index -= 1
             self.update_selection()
+        else:
+            self.sel_index = len(self.selectables) - 1
+            self.update_selection()
 
     def select_next(self):
         # "Down" moves toward the bottom of the screen; stops at the last item
         if self.sel_index < len(self.selectables) - 1:
             self.sel_index += 1
+            self.update_selection()
+        else:
+            self.sel_index = 0
             self.update_selection()
 
     def update_selection(self):
