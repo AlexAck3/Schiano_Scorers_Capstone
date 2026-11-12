@@ -165,13 +165,13 @@ def Run_PWM():
 
         # Switch to top coil
         coil_select.value = False
-        print("\nTOP COIL")
+        print(f"\nTOP COIL: {top_coil_time}s")
         time.sleep(top_coil_time)
         Read_TC()
 
         # Switch to bottom coil
         coil_select.value = True
-        print("\nBOTTOM COIL")
+        print(f"\nBOTTOM COIL: {bot_coil_time}s")
         time.sleep(bot_coil_time)
         Read_TC()
 
@@ -180,6 +180,7 @@ def Run_PWM():
         print("-" * 30)
         print(f"PWM Off for {total_off_time:2F} seconds")
         print("-" * 30)
+        time.sleep(total_off_time)
 
 if __name__ == "__main__":
     if SETTING == SPI:
