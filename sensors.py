@@ -26,13 +26,13 @@ I2C = 1
 BOTH = 2
 PWM = 3
 # ------ PWM Options ------
-PWM_PERIOD = 5      # s
+PWM_PERIOD = 30     # s
 PWM_DUTYCYCLE = 50  # %
-TOP_COIL_PCT = 50   # %
+TOP_COIL_PCT = 10   # %
 BOT_COIL_PCT = 100 - TOP_COIL_PCT
 # -------------------------
 
-SETTING = SPI   # Which one do you want to read?
+SETTING = PWM   # Which one do you want to read?
 
 from smbus2 import SMBus
 from mlx90614 import MLX90614
@@ -152,9 +152,11 @@ def Run_PWM():
     bot_coil_time = total_on_time*(BOT_COIL_PCT/100)
 
     PWM_pin = digitalio.DigitalInOut(board.D19)
+    PWM_pin.direction = digitalio.Direction.OUTPUT
 
     # False = Top, True = Bottom
     coil_select = digitalio.DigitalInOut(board.D26)
+    coil_select.direction = digitalio.Direction.OUTPUT
 
     while True:
         # PWM ON
@@ -165,21 +167,22 @@ def Run_PWM():
 
         # Switch to top coil
         coil_select.value = False
-        print("\nTOP COIL")
+        print(f"\nTOP COIL: {top_coil_time}s")
         time.sleep(top_coil_time)
-        Read_TC()
+        Read_TC(thermocouple)
 
         # Switch to bottom coil
         coil_select.value = True
-        print("\nBOTTOM COIL")
+        print(f"\nBOTTOM COIL: {bot_coil_time}s")
         time.sleep(bot_coil_time)
-        Read_TC()
+        Read_TC(thermocouple)
 
         # PWM OFF
         PWM_pin.value = False
         print("-" * 30)
         print(f"PWM Off for {total_off_time:2F} seconds")
         print("-" * 30)
+        time.sleep(total_off_time)
 
 if __name__ == "__main__":
     if SETTING == SPI:
