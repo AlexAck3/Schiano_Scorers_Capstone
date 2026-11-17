@@ -1,0 +1,5 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+J1,"TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal",1,Screw_Terminal_01x02,
+J2,"TerminalBlock_Phoenix_MKDS-1,5-6-5.08_1x06_P5.08mm_Horizontal",1,Screw_Terminal_01x06,
+J3,"TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal",1,Screw_Terminal_01x04,
+"K1, K2, K3",RELAY_G2RL-1A-E DC5_OMR,3,G2RL-1A-E DC24,
