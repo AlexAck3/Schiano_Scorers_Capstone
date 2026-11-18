@@ -465,6 +465,212 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Screw_Terminal_01x02"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Screw_Terminal_01x02"
+				(at 0 -5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "screw terminal"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TerminalBlock*:*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Screw_Terminal_01x02_1_1"
+				(rectangle
+					(start -1.27 1.27)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 0.3302) (xy 0.3302 -0.508)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.5334 -2.2098) (xy 0.3302 -3.048)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 0.508) (xy 0.508 -0.3302)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -0.3556 -2.032) (xy 0.508 -2.8702)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 0)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 0 -2.54)
+					(radius 0.635)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Screw_Terminal_01x03"
 			(pin_names
 				(offset 1.016)
@@ -724,7 +930,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Connector:Screw_Terminal_01x06"
+		(symbol "Connector:Screw_Terminal_01x05"
 			(pin_names
 				(offset 1.016)
 				(hide yes)
@@ -744,8 +950,8 @@
 					)
 				)
 			)
-			(property "Value" "Screw_Terminal_01x06"
-				(at 0 -10.16 0)
+			(property "Value" "Screw_Terminal_01x05"
+				(at 0 -7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -776,7 +982,7 @@
 					)
 				)
 			)
-			(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic screw terminal, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -809,10 +1015,10 @@
 					)
 				)
 			)
-			(symbol "Screw_Terminal_01x06_1_1"
+			(symbol "Screw_Terminal_01x05_1_1"
 				(rectangle
 					(start -1.27 6.35)
-					(end 1.27 -8.89)
+					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -883,18 +1089,6 @@
 				)
 				(polyline
 					(pts
-						(xy -0.5334 -7.2898) (xy 0.3302 -8.128)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy -0.3556 5.588) (xy 0.508 4.7498)
 					)
 					(stroke
@@ -953,18 +1147,6 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy -0.3556 -7.112) (xy 0.508 -7.9502)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
 				(circle
 					(center 0 5.08)
 					(radius 0.635)
@@ -1011,17 +1193,6 @@
 				)
 				(circle
 					(center 0 -5.08)
-					(radius 0.635)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -7.62)
 					(radius 0.635)
 					(stroke
 						(width 0.1524)
@@ -1114,24 +1285,6 @@
 						)
 					)
 					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -7.62 0)
-					(length 3.81)
-					(name "Pin_6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1519,307 +1672,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:SolderJumper_2_Open"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "JP"
-				(at 0 2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "SolderJumper_2_Open"
-				(at 0 -2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Solder Jumper, 2-pole, open"
-				(at 0 -5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "solder jumper SPST"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "SolderJumper*Open*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_0_1"
-				(polyline
-					(pts
-						(xy -0.254 1.016) (xy -0.254 -1.016)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.254 -1.016)
-					(mid -1.2656 0)
-					(end -0.254 1.016)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(arc
-					(start 0.254 1.016)
-					(mid 1.2656 0)
-					(end 0.254 -1.016)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 1.016) (xy 0.254 -1.016)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SolderJumper_2_Open_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 3.81)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Mechanical:MountingHole_Pad_MP"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom no)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "H"
-				(at 0 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "MountingHole_Pad_MP"
-				(at 0 4.445 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Mounting Hole with connection as pad named MP"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "mounting hole"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "MountingHole*Pad*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_MP_0_1"
-				(circle
-					(center 0 1.27)
-					(radius 1.27)
-					(stroke
-						(width 1.27)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "MountingHole_Pad_MP_1_1"
-				(pin input line
-					(at 0 -2.54 90)
-					(length 2.54)
-					(name "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "MP"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Simulation_SPICE:NPN"
 			(pin_numbers
 				(hide yes)
@@ -2084,145 +1936,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+5V"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "+5V"
-				(at 0 3.556 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "+5V_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+5V_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power global)
 			(pin_numbers
@@ -2340,1024 +2053,814 @@
 		)
 	)
 	(junction
-		(at 102.87 106.68)
+		(at 127 135.89)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "0c3f0c65-282d-49f7-b9f2-c005239c296e")
+		(uuid "0423f82a-db1d-4da9-b1d4-fb2566805d80")
 	)
 	(junction
-		(at 127 62.23)
+		(at 77.47 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "2961f44f-1839-42d3-b54e-c38f3f06b91e")
+		(uuid "05b0247d-7d16-4f58-87e5-7c7e589f28f9")
 	)
 	(junction
-		(at 129.54 111.76)
+		(at 80.01 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5908e3fc-b189-4f08-9511-e35cf26ec627")
+		(uuid "0bbd80cf-f503-4581-b319-9983bcc21806")
 	)
 	(junction
-		(at 109.22 62.23)
+		(at 82.55 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "771b1fd4-612c-492e-a9ce-f9bc8a82756e")
+		(uuid "1ba5ec47-6c8b-4a82-a324-4fd037905fa9")
 	)
 	(junction
-		(at 46.99 78.74)
+		(at 104.14 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7e8ce1d4-6896-4072-b738-da7057df6e13")
+		(uuid "2155a9e9-cb3c-46de-8b2e-0419eb50ca8c")
 	)
 	(junction
-		(at 58.42 78.74)
+		(at 80.01 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "81ff4866-8505-4fbf-9e07-e64ccd8292ab")
+		(uuid "29a4cb2a-680c-43a5-9abf-3da4cea0d07b")
 	)
 	(junction
-		(at 114.3 62.23)
+		(at 106.68 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "92683519-b6eb-4c4b-838a-ee4564d1c59d")
+		(uuid "2c5bf5e2-a315-4b82-a396-f5b0420842f9")
 	)
 	(junction
-		(at 113.03 106.68)
+		(at 77.47 74.93)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "998ae88f-d2f1-434c-a985-2f503da868bc")
+		(uuid "3a101bd9-69a6-4e94-8152-7638cdb5339e")
 	)
 	(junction
-		(at 68.58 78.74)
+		(at 154.94 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "9c7ac6f1-a93e-466a-95f2-05ed1ec4a42a")
+		(uuid "7b87b922-98fe-4928-907c-c6ce1b58ea87")
 	)
 	(junction
-		(at 129.54 96.52)
+		(at 104.14 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a5a26ee3-4f3d-4a8c-92a4-7ae06ec37684")
+		(uuid "81ae2517-a1bb-41a8-a504-d09235fe0d89")
 	)
 	(junction
-		(at 129.54 106.68)
+		(at 106.68 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "a92690a0-387c-4cfe-a245-17d4e65c0797")
+		(uuid "975eff07-74c6-44c6-ba86-d5264781c3af")
 	)
 	(junction
-		(at 124.46 62.23)
+		(at 109.22 104.14)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c58f2c67-b2f4-4ad7-90dc-3b2b69295026")
+		(uuid "a6be0b2a-89b9-477c-bb2d-80f0674a79ff")
 	)
 	(junction
-		(at 81.28 106.68)
+		(at 69.85 102.87)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c9734e86-2318-4131-8f67-46b89393eb5d")
+		(uuid "cc16d6b7-c9e8-40d6-af7b-e5399c1f9e3d")
 	)
 	(junction
-		(at 78.74 106.68)
+		(at 129.54 138.43)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "d542e360-d2fb-4730-826e-b48e46f993c1")
+		(uuid "ebad35e6-ab28-4eb9-b4c5-7d9898a8d74a")
 	)
 	(junction
-		(at 109.22 127)
+		(at 121.92 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e4c14c48-2797-46b1-bda0-c20db26f32f9")
+		(uuid "ecc05360-6599-42ca-9a7f-6a201b5911ec")
 	)
 	(junction
-		(at 132.08 96.52)
+		(at 97.79 130.81)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "e628bd95-7441-4857-8a1e-2fa993de27de")
+		(uuid "fa89004c-b8e9-40ad-9f1c-1508048d6968")
 	)
-	(junction
-		(at 132.08 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ea994404-ceec-4cf4-8b50-32d9423e1f4d")
-	)
-	(wire
-		(pts
-			(xy 132.08 96.52) (xy 132.08 99.06)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bbacc8a-83df-4f85-b523-34d66fc91019")
-	)
-	(wire
-		(pts
-			(xy 68.58 78.74) (xy 76.2 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c486b1a-6d80-4211-9e88-335530afe3ca")
-	)
-	(wire
-		(pts
-			(xy 53.34 135.89) (xy 55.88 135.89)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0ecb5249-6887-48ea-b387-1f4fcb691fea")
-	)
-	(wire
-		(pts
-			(xy 124.46 62.23) (xy 127 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "12a19f65-b7f5-45b7-b971-fd305730334f")
-	)
 	(wire
 		(pts
-			(xy 90.17 152.4) (xy 162.56 152.4)
+			(xy 106.68 104.14) (xy 106.68 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "199f1197-0724-449c-9ee3-fa9c71d489a5")
+		(uuid "0261b150-ac01-44f8-acd1-f2ed071cc7fa")
 	)
 	(wire
 		(pts
-			(xy 127 62.23) (xy 162.56 62.23)
+			(xy 80.01 45.72) (xy 158.75 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1c84e999-12ec-4f9d-bccd-06fe04935e31")
+		(uuid "056f1d8d-b836-4c0b-84b7-e9e28bf6d188")
 	)
 	(wire
 		(pts
-			(xy 113.03 106.68) (xy 129.54 106.68)
+			(xy 104.14 101.6) (xy 104.14 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "27124bf7-7ea0-4ca5-ba75-faad64615e22")
+		(uuid "0a37aff5-16d4-4a76-9f96-0ca53f160350")
 	)
 	(wire
 		(pts
-			(xy 53.34 146.05) (xy 55.88 146.05)
+			(xy 66.04 74.93) (xy 77.47 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2da19b6b-0537-4453-bf8e-caa93c3d7687")
+		(uuid "19f779a0-8473-41ac-b9a7-a501cb639b23")
 	)
 	(wire
 		(pts
-			(xy 46.99 78.74) (xy 46.99 80.01)
+			(xy 62.23 107.95) (xy 62.23 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2fb7c5bd-adb8-4efc-8287-9ada6a25d2ae")
+		(uuid "21e6da03-37a6-4db7-946c-a39b06c9ceb4")
 	)
 	(wire
 		(pts
-			(xy 109.22 115.57) (xy 109.22 119.38)
+			(xy 154.94 50.8) (xy 154.94 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33deafb1-23ae-4a7b-8771-581408bb2bc4")
+		(uuid "26e8c278-40ce-4fc6-be63-f66111a687d3")
 	)
 	(wire
 		(pts
-			(xy 129.54 106.68) (xy 129.54 111.76)
+			(xy 80.01 45.72) (xy 80.01 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "35a81fd5-345e-4eb8-a37f-0999b86ec66c")
+		(uuid "31ad4ec0-1197-4152-b90f-4002a6be5d87")
 	)
 	(wire
 		(pts
-			(xy 25.4 85.09) (xy 27.94 85.09)
+			(xy 48.26 66.04) (xy 64.77 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b4a09ee-369d-4960-8776-3c59978ce5ce")
+		(uuid "327d72a4-1749-4742-9a27-87545598cf4f")
 	)
 	(wire
 		(pts
-			(xy 129.54 96.52) (xy 129.54 106.68)
+			(xy 92.71 119.38) (xy 92.71 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3c25f130-7a39-4644-96d6-bc1c81afc116")
+		(uuid "337e6ccf-da04-426d-ae76-8a375359d149")
 	)
 	(wire
 		(pts
-			(xy 90.17 134.62) (xy 90.17 152.4)
+			(xy 151.13 138.43) (xy 151.13 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40f710ec-8d17-4539-b550-d012ab3c27d5")
+		(uuid "33e55275-92c8-4756-95b1-59d422c041f0")
 	)
 	(wire
 		(pts
-			(xy 53.34 143.51) (xy 55.88 143.51)
+			(xy 129.54 100.33) (xy 129.54 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46e6ff98-0380-4104-842a-9d128015fc4e")
+		(uuid "370c06d3-6d92-45b7-a918-02d4651180cd")
 	)
 	(wire
 		(pts
-			(xy 114.3 53.34) (xy 114.3 62.23)
+			(xy 104.14 63.5) (xy 104.14 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "46e72f58-3a6a-4b0d-be18-316e86464670")
+		(uuid "38a4514a-b4e8-403e-804a-2fbe55e28c28")
 	)
 	(wire
 		(pts
-			(xy 46.99 62.23) (xy 46.99 68.58)
+			(xy 119.38 135.89) (xy 127 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "4e73d78f-77ea-4e30-96e8-8de1d41a181b")
+		(uuid "3e88f15d-ce2c-426a-8256-eff5b1d20275")
 	)
 	(wire
 		(pts
-			(xy 132.08 137.16) (xy 143.51 137.16)
+			(xy 114.3 168.91) (xy 54.61 168.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "549d982b-bed1-4aaf-a436-24dfc82b7961")
+		(uuid "40c6bc2e-0cc6-497e-8d04-0c0efd12ce5f")
 	)
 	(wire
 		(pts
-			(xy 109.22 127) (xy 109.22 129.54)
+			(xy 92.71 130.81) (xy 97.79 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "54fc0d99-9c13-4fde-ac5e-d769edba2b81")
+		(uuid "40ff2ccc-0afd-41d0-b8cb-55ffdfeac0c5")
 	)
 	(wire
 		(pts
-			(xy 109.22 48.26) (xy 109.22 53.34)
+			(xy 119.38 147.32) (xy 119.38 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5563edda-9c3c-4c32-8290-210370965076")
+		(uuid "450d602b-847c-4123-b8fd-b427e3031d5d")
 	)
 	(wire
 		(pts
-			(xy 58.42 69.85) (xy 58.42 78.74)
+			(xy 109.22 104.14) (xy 109.22 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "58d0ca02-5be2-4ae7-8d2a-6db6e91076a4")
+		(uuid "5605c7b2-2c85-48ca-948d-c9f0c52f7615")
 	)
 	(wire
 		(pts
-			(xy 162.56 152.4) (xy 162.56 62.23)
+			(xy 58.42 135.89) (xy 90.17 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "59d25518-48b3-4ac3-8b9a-1204b45c5fb4")
+		(uuid "5691ed68-60bb-4175-8810-ba9b2d6e37d9")
 	)
 	(wire
 		(pts
-			(xy 97.79 134.62) (xy 101.6 134.62)
+			(xy 127 125.73) (xy 127 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5bf6e262-aaea-448b-8f5a-edf908e74f31")
+		(uuid "594459fc-59c0-46d3-9719-0c606782a1e9")
 	)
 	(wire
 		(pts
-			(xy 78.74 83.82) (xy 78.74 106.68)
+			(xy 54.61 73.66) (xy 48.26 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "671779eb-2fb5-440f-9022-9d23503de90b")
+		(uuid "5dbd5f2c-28d7-47a2-a334-12a0d24cffb9")
 	)
 	(wire
 		(pts
-			(xy 76.2 78.74) (xy 76.2 83.82)
+			(xy 127 163.83) (xy 127 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6af22066-7db9-4238-a4cb-0db6aa4572dc")
+		(uuid "5f04f855-ade3-4f7f-b50b-76ca6a7b4926")
 	)
 	(wire
 		(pts
-			(xy 173.99 102.87) (xy 176.53 102.87)
+			(xy 48.26 71.12) (xy 58.42 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c74ea34-afef-4d8f-a34a-94e4e68a68fd")
+		(uuid "639641e8-239e-4bfe-a759-13c2f11b4ddb")
 	)
 	(wire
 		(pts
-			(xy 67.31 78.74) (xy 68.58 78.74)
+			(xy 121.92 163.83) (xy 127 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d2eeb52-364f-490c-b107-eb75d128d776")
+		(uuid "671724df-ffce-4117-a3f4-835ea816a9f6")
 	)
 	(wire
 		(pts
-			(xy 109.22 60.96) (xy 109.22 62.23)
+			(xy 109.22 104.14) (xy 160.02 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6db98af1-7037-40df-b4c8-e6450dfbe9e2")
+		(uuid "67498ed6-d232-4b19-addc-bedf3d3b54cd")
 	)
 	(wire
 		(pts
-			(xy 46.99 78.74) (xy 58.42 78.74)
+			(xy 80.01 77.47) (xy 80.01 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "73ff70ed-f83a-4380-85a3-0212296a5043")
+		(uuid "6918ff23-f775-450a-9f7d-891b65355c1f")
 	)
 	(wire
 		(pts
-			(xy 123.19 62.23) (xy 124.46 62.23)
+			(xy 129.54 138.43) (xy 129.54 161.29)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "79bc9f38-3980-4ad1-ba8e-61ab89676e4b")
+		(uuid "6a7b2c2a-44fb-46f4-a5fe-787ed35131a2")
 	)
 	(wire
 		(pts
-			(xy 121.92 127) (xy 121.92 111.76)
+			(xy 82.55 77.47) (xy 82.55 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "7bd1749d-f333-425f-bd38-ea5b1e77c47b")
+		(uuid "6ab5b8de-e951-4480-a63a-af454e3fcff8")
 	)
 	(wire
 		(pts
-			(xy 109.22 127) (xy 121.92 127)
+			(xy 151.13 106.68) (xy 160.02 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "812c7a24-76d6-45a1-8164-6c474ccc7088")
+		(uuid "6b30976f-d6fe-48a5-8eac-41d4c128e887")
 	)
 	(wire
 		(pts
-			(xy 173.99 105.41) (xy 176.53 105.41)
+			(xy 132.08 138.43) (xy 151.13 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "869395de-16df-498a-9d77-d5c9b6070cf9")
+		(uuid "6f40b12d-bd44-4369-a6ba-0252dd4f09e0")
 	)
 	(wire
 		(pts
-			(xy 127 62.23) (xy 127 73.66)
+			(xy 158.75 50.8) (xy 154.94 50.8)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "87e56c20-9e5f-4570-ba64-0e189bef9337")
+		(uuid "7184e9f2-95b0-4435-a5a1-632359eeb0d1")
 	)
 	(wire
 		(pts
-			(xy 86.36 68.58) (xy 90.17 68.58)
+			(xy 92.71 102.87) (xy 104.14 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "89f001c6-7a60-4ce9-9053-a1f91cb00aa8")
+		(uuid "74912f80-a78c-489b-88f1-d50f38bed910")
 	)
 	(wire
 		(pts
-			(xy 53.34 133.35) (xy 55.88 133.35)
+			(xy 104.14 130.81) (xy 104.14 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8ac4cd42-270e-4107-b64a-c371d38d089b")
+		(uuid "7d7ce551-9eee-4665-b6d5-e991abab3dee")
 	)
 	(wire
 		(pts
-			(xy 121.92 111.76) (xy 127 111.76)
+			(xy 82.55 100.33) (xy 106.68 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8de833ef-0c77-4995-9abc-f6ed6d7694b3")
+		(uuid "800cd081-061e-4ff9-a184-c7ffb3a76798")
 	)
 	(wire
 		(pts
-			(xy 46.99 90.17) (xy 46.99 95.25)
+			(xy 69.85 102.87) (xy 77.47 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "969149bf-92a0-4254-933c-fb1e844fbff8")
+		(uuid "807c07b9-c2aa-4040-b88d-f075e9353a30")
 	)
 	(wire
 		(pts
-			(xy 102.87 97.79) (xy 102.87 106.68)
+			(xy 77.47 74.93) (xy 77.47 77.47)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "98d29095-953e-4f66-9953-0cc026ae960b")
+		(uuid "84a4dc62-ba51-4817-bf46-da46a74f5ca3")
 	)
 	(wire
 		(pts
-			(xy 132.08 111.76) (xy 132.08 134.62)
+			(xy 104.14 102.87) (xy 104.14 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9b53806d-6c09-4cce-94da-71014e934c59")
+		(uuid "8b00836f-bae8-46ac-b923-70c4b7b95e15")
 	)
 	(wire
 		(pts
-			(xy 109.22 62.23) (xy 114.3 62.23)
+			(xy 66.04 102.87) (xy 69.85 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9f87f78e-8098-4142-a6c6-24ca52a5ec6d")
+		(uuid "90361949-bf38-4160-977e-f69316a00d5f")
 	)
 	(wire
 		(pts
-			(xy 129.54 111.76) (xy 129.54 134.62)
+			(xy 69.85 113.03) (xy 69.85 115.57)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a34ecd50-29a7-45b8-9085-b062b7d6b094")
+		(uuid "9135e753-3484-4502-ae68-bdbfc9726456")
 	)
 	(wire
 		(pts
-			(xy 81.28 106.68) (xy 102.87 106.68)
+			(xy 77.47 102.87) (xy 77.47 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a48e5dde-4dce-4cfe-998d-400a124f605a")
+		(uuid "957bb601-5f89-4423-8c27-4c84c810a908")
 	)
 	(wire
 		(pts
-			(xy 114.3 62.23) (xy 115.57 62.23)
+			(xy 106.68 100.33) (xy 129.54 100.33)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aa101b6b-519b-424e-9f85-6737d3a450b7")
+		(uuid "9d89f4bd-9649-4e51-8af8-a4abb3492701")
 	)
 	(wire
 		(pts
-			(xy 129.54 73.66) (xy 129.54 96.52)
+			(xy 154.94 48.26) (xy 158.75 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "aba858f9-376d-47ec-ad46-db969153af6f")
+		(uuid "9e8cc9a7-fceb-413a-84d7-98f0401029c6")
 	)
 	(wire
 		(pts
-			(xy 124.46 53.34) (xy 124.46 62.23)
+			(xy 62.23 68.58) (xy 48.26 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ad5671b5-9e37-457f-b1d6-c7753823e4b6")
+		(uuid "9eb009b4-20fd-476f-b1c8-cd2f47d24a99")
 	)
 	(wire
 		(pts
-			(xy 46.99 76.2) (xy 46.99 78.74)
+			(xy 127 63.5) (xy 104.14 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b137ac36-5987-4523-9a2d-e320d7e6f738")
+		(uuid "a3dc5078-149a-42bc-91cb-2914248a7ccc")
 	)
 	(wire
 		(pts
-			(xy 109.22 139.7) (xy 109.22 143.51)
+			(xy 119.38 163.83) (xy 121.92 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bac7ee33-87d6-4a0f-853d-1699949b7bb0")
+		(uuid "a58be87e-9922-44f6-9f57-bab35b8478ba")
 	)
 	(wire
 		(pts
-			(xy 132.08 73.66) (xy 132.08 96.52)
+			(xy 106.68 100.33) (xy 106.68 104.14)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "bd051730-91c2-4633-8755-10bd20bfa05e")
+		(uuid "aaf5b0b2-8281-4429-815d-e99eb2c4ee45")
 	)
 	(wire
 		(pts
-			(xy 53.34 140.97) (xy 55.88 140.97)
+			(xy 48.26 45.72) (xy 80.01 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "be54dab8-e1ea-43be-9ba7-272068617666")
+		(uuid "b5672190-210a-4fef-809a-9b9e7137ba27")
 	)
 	(wire
 		(pts
-			(xy 97.79 68.58) (xy 101.6 68.58)
+			(xy 54.61 168.91) (xy 54.61 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c57cd82f-408c-46b7-bb01-4cd5491f51ba")
+		(uuid "becf80d2-5cb4-4476-bd8f-e6ecbb22295c")
 	)
 	(wire
 		(pts
-			(xy 58.42 78.74) (xy 59.69 78.74)
+			(xy 97.79 130.81) (xy 104.14 130.81)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cb51c418-a560-4c34-97be-c192de1164c0")
+		(uuid "c12f72c9-4ab2-458b-9913-dbab46242117")
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 113.03 106.68)
+			(xy 119.38 154.94) (xy 119.38 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cc413550-099a-49e1-adbd-bc812448fd27")
+		(uuid "c57beff3-f0fd-4f4b-b93f-d4e0b8f0e0c1")
 	)
 	(wire
 		(pts
-			(xy 109.22 62.23) (xy 109.22 63.5)
+			(xy 121.92 177.8) (xy 121.92 173.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cd28a677-9e2e-45c2-99c4-d70590e729d2")
+		(uuid "c7b92c9a-824e-4989-99c0-4fe0b5c4fb6f")
 	)
 	(wire
 		(pts
-			(xy 53.34 138.43) (xy 55.88 138.43)
+			(xy 77.47 73.66) (xy 77.47 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "cf1178e6-1b5a-452f-9d41-9b736a1daef2")
+		(uuid "cc914dd8-acf0-4e33-a026-e16ff7da1f3b")
 	)
 	(wire
 		(pts
-			(xy 35.56 85.09) (xy 39.37 85.09)
+			(xy 127 135.89) (xy 127 138.43)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d05ad88e-4365-43b4-86ff-90879283c8ea")
+		(uuid "d61988d0-3a00-4fd1-8f68-450c41ee63d7")
 	)
 	(wire
 		(pts
-			(xy 132.08 134.62) (xy 132.08 137.16)
+			(xy 58.42 71.12) (xy 58.42 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d385c9bb-89c6-47be-8dc4-af8ff313dbea")
+		(uuid "db382498-dc7a-4fd2-bb19-81d64c6e9a86")
 	)
 	(wire
 		(pts
-			(xy 81.28 83.82) (xy 81.28 106.68)
+			(xy 66.04 82.55) (xy 66.04 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d9f0cc16-bc73-4e28-ba06-cb2885b6b3ee")
+		(uuid "def90510-51a8-49c9-9156-0a0cf25eae53")
 	)
 	(wire
 		(pts
-			(xy 68.58 69.85) (xy 68.58 78.74)
+			(xy 48.26 48.26) (xy 154.94 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "dd6d4894-f401-4b1c-b72a-d282d408eefd")
+		(uuid "e09924c9-0041-4466-8520-e1a68421a468")
 	)
 	(wire
 		(pts
-			(xy 49.53 115.57) (xy 78.74 115.57)
+			(xy 66.04 90.17) (xy 66.04 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e3f89349-e10b-43f9-a5de-2d392070c201")
+		(uuid "e5948621-2110-46ff-9b9e-c89b80fd642e")
 	)
 	(wire
 		(pts
-			(xy 102.87 106.68) (xy 104.14 106.68)
+			(xy 77.47 63.5) (xy 77.47 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "eb4e3e06-10a1-4ef1-a5bf-35ae624a58ce")
+		(uuid "ecc48af2-ac8d-425b-9929-c74fe841dd38")
 	)
 	(wire
 		(pts
-			(xy 109.22 73.66) (xy 109.22 77.47)
+			(xy 127 133.35) (xy 127 135.89)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed8290d9-67dc-48ef-9df6-1ddfe789affa")
+		(uuid "f1d766e0-b6e9-4bc2-af87-b9d2195613e4")
 	)
 	(wire
 		(pts
-			(xy 111.76 106.68) (xy 113.03 106.68)
+			(xy 48.26 63.5) (xy 77.47 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f0514833-a429-4fc2-ad51-c2e9da174422")
+		(uuid "f1e94dfb-c969-42ae-92ff-e25316cf2e71")
 	)
 	(wire
 		(pts
-			(xy 132.08 99.06) (xy 139.7 99.06)
+			(xy 77.47 63.5) (xy 104.14 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f1843c5a-e2e0-4246-9d1b-d72a32784927")
+		(uuid "f8134753-2257-41d9-ad47-8320d93eb20d")
 	)
 	(wire
 		(pts
-			(xy 78.74 115.57) (xy 78.74 106.68)
+			(xy 92.71 111.76) (xy 92.71 102.87)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "f621724c-895a-46fc-ad2c-a31f5bba8e4d")
+		(uuid "fdf5d999-00d4-4a91-b463-c586fbd875a6")
 	)
-	(global_label "COIL 2"
-		(shape input)
-		(at 176.53 105.41 0)
-		(fields_autoplaced yes)
+	(label "DIN 2"
+		(at 48.26 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "556cd277-91df-4229-8fc1-84736eb25d18")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.9257 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "1c7d6db4-74b2-4851-8292-d64b969a8f77")
 	)
-	(global_label "MAINS GND"
-		(shape input)
-		(at 53.34 135.89 180)
-		(fields_autoplaced yes)
+	(label "TOP COIL"
+		(at 151.13 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "5e3be587-4afd-463c-9b19-1092a7943248")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 39.8319 135.89 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "29240d14-d9e5-4741-84d7-7322b2dd8da7")
 	)
-	(global_label "DIN2"
-		(shape input)
-		(at 53.34 146.05 180)
-		(fields_autoplaced yes)
+	(label "DIGITAL GROUND"
+		(at 48.26 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "628759a0-9297-490d-b9d4-38288a8d014b")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.94 146.05 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "75c3b352-ba4c-4f3d-a0da-ee008f105163")
 	)
-	(global_label "COIL 2"
-		(shape input)
-		(at 143.51 137.16 0)
-		(fields_autoplaced yes)
+	(label "NEUTRAL IN"
+		(at 48.26 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "66e04fc5-bc3b-474e-baa1-1c900bd627a9")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 152.9057 137.16 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "9010f411-b22e-4ac6-901d-05c00bfb1746")
 	)
-	(global_label "COIL 1"
-		(shape input)
-		(at 176.53 102.87 0)
-		(fields_autoplaced yes)
+	(label "MAIN IN"
+		(at 48.26 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "7b45a0fd-97a3-4e60-bb0d-26bb9b9cf481")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 185.9257 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
+		(uuid "bb5d99d7-578f-4066-9cce-55e41ab54c95")
 	)
-	(global_label "DIN1"
-		(shape input)
-		(at 53.34 143.51 180)
-		(fields_autoplaced yes)
+	(label "MAIN OUT"
+		(at 149.86 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "7f1da0ef-034a-49c1-b1d4-d08d33312075")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 45.94 143.51 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "bc605efe-5be1-46db-9cd3-bcf9c61187e1")
 	)
-	(global_label "DIN1"
-		(shape input)
-		(at 25.4 85.09 180)
-		(fields_autoplaced yes)
+	(label "NEUTRAL OUT"
+		(at 146.05 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "8a39942f-8f6d-4ce7-8560-8921895be83f")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 18 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "c23098fc-45e3-41a9-b18b-b25efa3df5c2")
 	)
-	(global_label "DIN2"
-		(shape input)
-		(at 86.36 68.58 180)
-		(fields_autoplaced yes)
+	(label "DIN 1"
+		(at 48.26 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "a2940c57-073e-4ab9-bf90-bebfe1318f35")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 78.96 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "c89c640b-b738-47b0-b028-f9b785a08b7a")
 	)
-	(global_label "MAINS POWER"
-		(shape input)
-		(at 53.34 133.35 180)
-		(fields_autoplaced yes)
+	(label "DIN 3"
+		(at 48.26 73.66 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left bottom)
 		)
-		(uuid "afec9501-9b3d-408c-9fe8-394bfbb2751d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 37.2315 133.35 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "d61323e4-48ae-4267-874c-aa22b37e5e7a")
 	)
-	(global_label "COIL 1"
-		(shape input)
-		(at 139.7 99.06 0)
-		(fields_autoplaced yes)
+	(label "DIGITAL POWER"
+		(at 48.26 63.5 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify left bottom)
 		)
-		(uuid "db26f20a-769f-4c4c-8084-750457cca7f2")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 149.0957 99.06 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-	)
-	(global_label "MAINS POWER"
-		(shape input)
-		(at 49.53 115.57 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "dec607c3-57b6-42bc-89e4-fe028e424fbe")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 33.4215 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
+		(uuid "f795fd00-810a-4b6d-b7f7-146114ab8ce5")
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 119.38 62.23 180)
+		(lib_id "Connector:Screw_Terminal_01x03")
+		(at 163.83 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3366,29 +2869,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "060e537c-8c25-4d9e-a597-7c540df1a29e")
-		(property "Reference" "D2"
-			(at 119.38 55.88 0)
+		(uuid "1707148a-4aac-41b0-a44f-8a7dfc6d878b")
+		(property "Reference" "J3"
+			(at 166.37 46.9899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "D"
-			(at 119.38 58.42 0)
+		(property "Value" "Screw_Terminal_01x03"
+			(at 166.37 49.5299 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 119.38 62.23 0)
+			(at 163.83 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3399,7 +2904,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 62.23 0)
+			(at 163.83 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3409,30 +2914,8 @@
 				)
 			)
 		)
-		(property "Description" "Diode"
-			(at 119.38 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 119.38 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 119.38 62.23 0)
+		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 163.83 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3443,15 +2926,18 @@
 			)
 		)
 		(pin "2"
-			(uuid "869d2698-f4fb-41d2-b968-532698521e96")
+			(uuid "cdc1e73e-a86c-4f0a-bd03-570c04e757e4")
 		)
 		(pin "1"
-			(uuid "8dcc6c8f-f343-4160-9823-ca609de79044")
+			(uuid "105e40d7-8a97-41d5-a62a-1fd16a77f891")
+		)
+		(pin "3"
+			(uuid "b77a9a19-32d9-4969-8bb0-28127d61dc80")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
 				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "D2")
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -3459,7 +2945,7 @@
 	)
 	(symbol
 		(lib_id "2026-11-12_21-36-38:G2RL-1A-E_DC24")
-		(at 127 111.76 90)
+		(at 77.47 77.47 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3468,301 +2954,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "0e0d4430-4f0e-442b-9ef2-0c6f6228624c")
-		(property "Reference" "K3"
-			(at 135.89 124.4601 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "G2RL-1A-E DC24"
-			(at 135.89 121.9201 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "relya:RELAY_G2RL-1A-E DC5_OMR"
-			(at 127 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "G2RL-1A-E DC24"
-			(at 127 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 127 111.76 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "e0472370-5b1d-4cf7-af9f-77dcb1a1ec5f")
-		)
-		(pin "1"
-			(uuid "e36d3fc2-4fb1-4d6d-a836-d803476f3c97")
-		)
-		(pin "8"
-			(uuid "d7baf55f-0083-4b12-8dba-ca3026a7610d")
-		)
-		(pin "6"
-			(uuid "8bf7168a-d5f6-4f73-8d8d-d38f5c480da0")
-		)
-		(pin "4"
-			(uuid "e73df8c6-7a36-4aac-b291-dec1892146af")
-		)
-		(pin "5"
-			(uuid "6487ba0e-9b7a-4c24-a0b1-45293160ef24")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "K3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Simulation_SPICE:NPN")
-		(at 106.68 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "170d1417-ea81-409c-a932-b7c3d1909f95")
-		(property "Reference" "Q3"
-			(at 111.76 133.3499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "NPN"
-			(at 111.76 135.8899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92"
-			(at 170.18 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 170.18 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 106.68 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "NPN"
-			(at 106.68 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Type" "GUMMELPOON"
-			(at 106.68 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 106.68 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "e9487f4f-7712-4c4f-bb51-6dc97799695d")
-		)
-		(pin "2"
-			(uuid "1e796a03-c7f1-43e2-bd65-fcb0ff9db50f")
-		)
-		(pin "1"
-			(uuid "d439894b-bd92-4a35-8414-009a9e1411e1")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 46.99 62.23 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1ac87f21-60b2-41b9-8aec-8bb717618b48")
-		(property "Reference" "#PWR01"
-			(at 46.99 66.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 46.99 57.15 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 46.99 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bded83d4-0410-4327-b81f-eabace3111b5")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "2026-11-12_21-36-38:G2RL-1A-E_DC24")
-		(at 76.2 83.82 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2058e331-1eb6-45a8-bbb4-61195724e2a0")
+		(uuid "212a794d-d707-489a-9daf-06e4b07e6d82")
 		(property "Reference" "K1"
-			(at 85.09 96.5201 90)
+			(at 86.36 87.6299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3773,7 +2968,7 @@
 			)
 		)
 		(property "Value" "G2RL-1A-E DC24"
-			(at 85.09 90.17 90)
+			(at 86.36 90.1699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3783,8 +2978,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "relya:RELAY_G2RL-1A-E DC5_OMR"
-			(at 76.2 83.82 0)
+		(property "Footprint" "RELAY_G2RL-1A-E DC5_OMR"
+			(at 77.47 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3796,7 +2991,7 @@
 			)
 		)
 		(property "Datasheet" "G2RL-1A-E DC24"
-			(at 76.2 83.82 0)
+			(at 77.47 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3808,7 +3003,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 76.2 83.82 0)
+			(at 77.47 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3819,22 +3014,22 @@
 			)
 		)
 		(pin "3"
-			(uuid "097a5b6e-4366-4ee1-bdfd-04f5e390e955")
-		)
-		(pin "1"
-			(uuid "dbe9e2f4-afe6-4f63-8962-8603d6a45b46")
-		)
-		(pin "8"
-			(uuid "4f3c0ee3-bc74-493e-b50c-11f56862a47d")
-		)
-		(pin "6"
-			(uuid "7ef961ac-cc58-40e3-95b6-bc1852fd7a7e")
-		)
-		(pin "4"
-			(uuid "0f13661d-ae0c-4af5-8bb0-33e52730ad2b")
+			(uuid "d14e6a51-08b2-4622-810c-f49707a0bee9")
 		)
 		(pin "5"
-			(uuid "9fdd8198-1165-4e58-9f93-36cf7d2a2ecf")
+			(uuid "7aba6f82-bf71-40e7-b2ae-6cdc606610b5")
+		)
+		(pin "6"
+			(uuid "b9364f9d-de2c-4368-8678-d606fab0dcd7")
+		)
+		(pin "4"
+			(uuid "ece78014-aadf-444f-9525-af1ddafadba2")
+		)
+		(pin "1"
+			(uuid "0c978858-4081-4a49-b7dd-35c8fc68f541")
+		)
+		(pin "8"
+			(uuid "3975568a-c8e6-4618-9224-fceec6c4fcd2")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
@@ -3846,977 +3041,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 109.22 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "26fbd9df-8332-4009-9052-8a648f04dc2d")
-		(property "Reference" "#PWR04"
-			(at 109.22 83.82 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 109.22 82.55 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 109.22 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e6ef8efc-fa17-4bba-9d05-73c3b1a16784")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad_MP")
-		(at 173.99 110.49 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2ff8beff-8db5-4eb3-866d-bcedd6972c5f")
-		(property "Reference" "H1"
-			(at 176.53 110.4899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "MountingHole_Pad_MP"
-			(at 176.53 113.0299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Mounting Hole with connection as pad named MP"
-			(at 173.99 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "MP"
-			(uuid "524d3a22-991c-402d-9e15-cbcba5b1adce")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "H1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 93.98 134.62 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3383e4d6-4aa0-4740-b043-04d8f39198a4")
-		(property "Reference" "R5"
-			(at 93.98 128.27 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R_US"
-			(at 93.98 130.81 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 94.234 133.604 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 93.98 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "45ce5cb7-8961-4847-b00e-c8b5d3909dbe")
-		)
-		(pin "2"
-			(uuid "b97f8208-4277-479e-ac9f-2b72745df9e9")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 46.99 95.25 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3466ca93-b272-417a-9e7e-dc9d3132e649")
-		(property "Reference" "#PWR02"
-			(at 46.99 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 46.99 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 46.99 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 46.99 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 46.99 95.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2e3f8121-040f-41db-abff-cc42885a764a")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 76.2 106.68 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3667c0f4-45ca-42c6-88c4-dde9bc9dc659")
-		(property "Reference" "#PWR05"
-			(at 76.2 113.03 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 76.2 111.76 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 76.2 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 76.2 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "36c5fcd6-d47e-45bc-9fec-7d4c0e3327dc")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D")
-		(at 63.5 78.74 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38c1d812-4e2e-49bc-ad5d-6d3a608f9de1")
-		(property "Reference" "D1"
-			(at 63.5 72.39 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 63.5 74.93 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 63.5 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 63.5 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 63.5 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 63.5 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 63.5 78.74 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "e3f51c61-b33a-44d1-b360-cef7fa58d1b0")
-		)
-		(pin "1"
-			(uuid "231189b7-4e35-465b-b503-fa26d9de2ed1")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 109.22 115.57 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "541c4dec-f425-49f4-91a4-1e0834f97660")
-		(property "Reference" "#PWR08"
-			(at 109.22 119.38 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 109.22 110.49 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 109.22 115.57 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9539331b-336d-4b2b-8e95-a4c8f1dd5dfb")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 53.34 138.43 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5c6a021a-dffd-407d-b43f-d9cf2391eaef")
-		(property "Reference" "#PWR010"
-			(at 57.15 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 49.53 138.4299 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 53.34 138.43 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4aab1187-6162-42e1-8c3e-6c6642b7cba6")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR010")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 93.98 68.58 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "79d81dd8-8c95-4bf1-81e7-4c41a3ad27c5")
-		(property "Reference" "R3"
-			(at 93.98 62.23 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R_US"
-			(at 93.98 64.77 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 94.234 67.564 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 93.98 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 93.98 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4ee96c9d-d79a-4a71-a503-754a13d7e569")
-		)
-		(pin "2"
-			(uuid "955b2a21-dbf8-4067-a511-f93172999a15")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "R3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 31.75 85.09 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8aba9353-c0bf-42b3-9269-cbd7681a1663")
-		(property "Reference" "R1"
-			(at 31.75 78.74 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "R_US"
-			(at 31.75 81.28 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 32.004 84.074 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 31.75 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 31.75 85.09 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2fc3ce61-78c3-40a9-897d-ad0c8bee5da0")
-		)
-		(pin "2"
-			(uuid "6c6d7a2b-9adf-4d1f-93e4-915138da8813")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 127 134.62 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ae94a72-d240-47a1-85a4-8acbed5822ab")
-		(property "Reference" "#PWR06"
-			(at 127 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 127 139.7 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 134.62 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "58c2d92c-f475-4b42-bd84-1efe5015fd1c")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 53.34 140.97 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "91d57cef-7bcc-4708-aa4e-14cc0087c552")
-		(property "Reference" "#PWR011"
-			(at 46.99 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 49.53 140.9699 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 140.97 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aa607603-a9f8-4903-9388-bc30873dffa7")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Simulation_SPICE:NPN")
-		(at 44.45 85.09 0)
+		(at 67.31 107.95 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4825,9 +3051,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "9352820d-30ee-4986-b5d0-79c00eac1e36")
+		(uuid "21867098-24b9-4f5a-baec-b0e17a8fecf1")
 		(property "Reference" "Q1"
-			(at 49.53 83.8199 0)
+			(at 72.39 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4838,7 +3064,7 @@
 			)
 		)
 		(property "Value" "NPN"
-			(at 49.53 86.3599 0)
+			(at 72.39 109.2199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4848,8 +3074,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92"
-			(at 107.95 85.09 0)
+		(property "Footprint" ""
+			(at 130.81 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4860,7 +3086,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 107.95 85.09 0)
+			(at 130.81 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4871,7 +3097,7 @@
 			)
 		)
 		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 44.45 85.09 0)
+			(at 67.31 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4882,7 +3108,7 @@
 			)
 		)
 		(property "Sim.Device" "NPN"
-			(at 44.45 85.09 0)
+			(at 67.31 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4893,7 +3119,7 @@
 			)
 		)
 		(property "Sim.Type" "GUMMELPOON"
-			(at 44.45 85.09 0)
+			(at 67.31 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4904,7 +3130,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 44.45 85.09 0)
+			(at 67.31 107.95 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4914,14 +3140,14 @@
 				)
 			)
 		)
+		(pin "1"
+			(uuid "ab64412d-128d-4f0c-a6ff-6cb6e4c27477")
+		)
 		(pin "3"
-			(uuid "4fbf8053-59e9-4be4-89b8-6ac8f6820199")
+			(uuid "fd71d6fa-e460-4d30-92f6-ba4d726277a2")
 		)
 		(pin "2"
-			(uuid "160b461e-f2bf-49a6-ad69-b0fd9bc1c6bc")
-		)
-		(pin "1"
-			(uuid "d7584317-d07c-4985-8ae4-a099abc22235")
+			(uuid "4bae2e48-d7dc-4e31-a564-6f21f6f551bf")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
@@ -4933,8 +3159,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 109.22 48.26 0)
+		(lib_id "power:GND")
+		(at 97.79 144.78 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4943,9 +3169,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "93f7c4cd-c240-4d93-93ac-84ed28c9e652")
-		(property "Reference" "#PWR03"
-			(at 109.22 52.07 0)
+		(uuid "286a3d8a-2a80-4723-b517-35f3e1ed49ae")
+		(property "Reference" "#PWR02"
+			(at 97.79 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4955,8 +3181,8 @@
 				)
 			)
 		)
-		(property "Value" "+5V"
-			(at 109.22 43.18 0)
+		(property "Value" "GND"
+			(at 97.79 149.86 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4966,7 +3192,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 48.26 0)
+			(at 97.79 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4977,7 +3203,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 48.26 0)
+			(at 97.79 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4987,8 +3213,8 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 109.22 48.26 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 97.79 144.78 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4999,92 +3225,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb645997-8f59-499c-ad98-aab43bac1d69")
+			(uuid "16fd55b9-6bcd-4117-adc1-dee481bd3460")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
 				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 107.95 97.79 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ab69189-fc56-4bb2-b272-8f9167d3e838")
-		(property "Reference" "JP3"
-			(at 107.95 91.44 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 107.95 93.98 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 97.79 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 107.95 102.87 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "269fe9f1-85cc-4791-9bd5-fe21b42da0fe")
-		)
-		(pin "1"
-			(uuid "a5e2ca80-b9dc-46f0-a110-6ecce51e57b7")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "JP3")
+					(reference "#PWR02")
 					(unit 1)
 				)
 			)
@@ -5092,7 +3238,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 46.99 72.39 180)
+		(at 104.14 97.79 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5101,31 +3247,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "a1a29eb3-aed9-45ab-a3f5-3201ffb02855")
+		(uuid "2da6ac49-e152-4449-a695-75de29707150")
 		(property "Reference" "R2"
-			(at 49.53 71.1199 0)
+			(at 106.68 96.5199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "R_US"
-			(at 49.53 73.6599 0)
+			(at 106.68 99.0599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 45.974 72.136 90)
+			(at 105.156 98.044 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5136,7 +3282,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 72.39 0)
+			(at 104.14 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5147,7 +3293,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 46.99 72.39 0)
+			(at 104.14 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5158,10 +3304,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "4969b1ad-91d1-4bc5-93dc-75ad6508c020")
+			(uuid "435bbec9-b95c-42a0-b40c-f751a5795672")
 		)
 		(pin "2"
-			(uuid "1520e221-0023-40d7-be8d-faa3699244ae")
+			(uuid "98c20e82-190e-4790-a79d-d9d823dbff84")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
@@ -5173,253 +3319,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:Screw_Terminal_01x03")
-		(at 168.91 105.41 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae1ca7f2-0861-418f-88a8-2a2b49bf43fa")
-		(property "Reference" "J2"
-			(at 168.91 96.52 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Screw_Terminal_01x03"
-			(at 168.91 99.06 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.91 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 168.91 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic screw terminal, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 168.91 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "0fe171cf-14b1-4d77-886d-cbea0167cbd6")
-		)
-		(pin "3"
-			(uuid "49784b5b-4a1a-4282-a071-a13ad47cff4b")
-		)
-		(pin "1"
-			(uuid "d4278786-ed90-4689-ad6f-ce8e996e52ea")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 109.22 123.19 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ae9524bb-22e4-43f1-b76e-2d19cdc584a9")
-		(property "Reference" "R6"
-			(at 111.76 121.9199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "R_US"
-			(at 111.76 124.4599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 108.204 122.936 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 109.22 123.19 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "912655ac-893d-44e0-b6a7-e83917708cfe")
-		)
-		(pin "2"
-			(uuid "a4c23972-5160-4009-b587-5353e1601166")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 119.38 53.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b2c2c52d-45a5-4d8e-8194-92aa85d3bf6e")
-		(property "Reference" "JP2"
-			(at 119.38 46.99 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 119.38 49.53 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 119.38 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 119.38 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 119.38 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "40eb7596-3e54-4f51-9705-6574d13089b3")
-		)
-		(pin "1"
-			(uuid "1412afcb-fb60-45a0-a202-85aeb662eb84")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
-		(at 109.22 143.51 0)
+		(at 64.77 66.04 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5428,9 +3329,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b316348c-6c46-4b6e-a84e-19951e0285c8")
-		(property "Reference" "#PWR09"
-			(at 109.22 149.86 0)
+		(uuid "32574db7-8603-4a19-b715-e9ebf44f7406")
+		(property "Reference" "#PWR04"
+			(at 71.12 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5441,17 +3342,18 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 109.22 148.59 0)
+			(at 68.58 66.0399 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 143.51 0)
+			(at 64.77 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5462,7 +3364,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 143.51 0)
+			(at 64.77 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5473,7 +3375,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 109.22 143.51 0)
+			(at 64.77 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5484,12 +3386,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "65bae677-94a1-4f25-8d12-8b292ab80ca5")
+			(uuid "9853c045-ab54-499b-9abc-2bea4d6d1a7e")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
 				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR09")
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -5497,7 +3399,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 109.22 57.15 180)
+		(at 127 129.54 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5506,31 +3408,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b9537ba4-7ced-4d0e-a57f-c84da4f4c418")
-		(property "Reference" "R4"
-			(at 111.76 55.8799 0)
+		(uuid "36c98914-db41-4a38-b6d0-be2870510a12")
+		(property "Reference" "R3"
+			(at 129.54 128.2699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Value" "R_US"
-			(at 111.76 58.4199 0)
+			(at 129.54 130.8099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 108.204 56.896 90)
+			(at 128.016 129.794 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5541,7 +3443,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 109.22 57.15 0)
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5552,7 +3454,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 109.22 57.15 0)
+			(at 127 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5563,15 +3465,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c2047b10-d298-4bd6-81e0-908908c2a035")
+			(uuid "8d21f45a-999c-4537-8c48-806798f66609")
 		)
 		(pin "2"
-			(uuid "e69d0f2b-1151-4610-a0d1-59474d3f2df5")
+			(uuid "1102ab8c-19be-4dfd-a794-d9964717678d")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
 				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "R4")
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -5579,7 +3481,7 @@
 	)
 	(symbol
 		(lib_id "Simulation_SPICE:NPN")
-		(at 106.68 68.58 0)
+		(at 95.25 135.89 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5588,9 +3490,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "c54c4b33-7636-43cf-9d0b-6536c07d6874")
+		(uuid "3b9485a4-590a-4259-b021-6120a7cc0e05")
 		(property "Reference" "Q2"
-			(at 111.76 67.3099 0)
+			(at 100.33 134.6199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5601,7 +3503,7 @@
 			)
 		)
 		(property "Value" "NPN"
-			(at 111.76 69.8499 0)
+			(at 100.33 137.1599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5611,8 +3513,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_THT:TO-92"
-			(at 170.18 68.58 0)
+		(property "Footprint" ""
+			(at 158.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5623,7 +3525,7 @@
 			)
 		)
 		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
-			(at 170.18 68.58 0)
+			(at 158.75 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5634,7 +3536,7 @@
 			)
 		)
 		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
-			(at 106.68 68.58 0)
+			(at 95.25 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5645,7 +3547,7 @@
 			)
 		)
 		(property "Sim.Device" "NPN"
-			(at 106.68 68.58 0)
+			(at 95.25 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5656,7 +3558,7 @@
 			)
 		)
 		(property "Sim.Type" "GUMMELPOON"
-			(at 106.68 68.58 0)
+			(at 95.25 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5667,7 +3569,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=C 2=B 3=E"
-			(at 106.68 68.58 0)
+			(at 95.25 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5677,14 +3579,14 @@
 				)
 			)
 		)
-		(pin "3"
-			(uuid "2e3f4911-b34c-406a-9c57-077298ae0ef5")
+		(pin "1"
+			(uuid "34a5834a-1454-41f6-8450-b36646b1eaaf")
 		)
 		(pin "2"
-			(uuid "1ba565b7-b0b8-4a8e-9f75-836fa33a685c")
+			(uuid "679faa8d-a0ca-4398-a0d7-4d50b9f18eed")
 		)
-		(pin "1"
-			(uuid "9b758306-27be-4482-8041-d9813114d1c1")
+		(pin "3"
+			(uuid "24330329-06ac-4880-96d3-837285b3e221")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
@@ -5696,8 +3598,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:D")
-		(at 107.95 106.68 180)
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 43.18 45.72 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5705,134 +3608,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d841a597-de30-4648-9bc8-1a3b94efa4a0")
-		(property "Reference" "D3"
-			(at 107.95 100.33 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D"
-			(at 107.95 102.87 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Diode"
-			(at 107.95 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 107.95 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 107.95 106.68 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "cd2a8c5e-de7d-4d07-94bc-4f08f36c9837")
-		)
-		(pin "1"
-			(uuid "26844596-be24-4025-9c85-da640dba7333")
-		)
-		(instances
-			(project "Pizza_oven_PCB"
-				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Screw_Terminal_01x06")
-		(at 60.96 138.43 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db2195e3-23cd-4490-bed3-89a0db01c3c2")
+		(uuid "4b7d0d73-3f0e-4380-a749-97efa5d5f07c")
 		(property "Reference" "J1"
-			(at 63.5 138.4299 0)
+			(at 43.18 54.61 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Screw_Terminal_01x06"
-			(at 63.5 140.9699 0)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 43.18 52.07 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 60.96 138.43 0)
+			(at 43.18 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5843,7 +3641,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 60.96 138.43 0)
+			(at 43.18 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5853,8 +3651,8 @@
 				)
 			)
 		)
-		(property "Description" "Generic screw terminal, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 60.96 138.43 0)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 43.18 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5863,24 +3661,12 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "4"
-			(uuid "393622cb-e86b-490a-8a58-8d5e42baabd9")
-		)
-		(pin "3"
-			(uuid "7359cadf-5f10-487c-8a4a-3d8dad7d3d62")
-		)
-		(pin "5"
-			(uuid "9b0b220b-675f-4a29-9eb5-aaa5b83e4947")
-		)
-		(pin "2"
-			(uuid "a451ee9e-7a99-4ffa-b2c4-2b5b9f6b6e35")
 		)
 		(pin "1"
-			(uuid "5fe4bc72-7a8e-49de-b462-6f10f565547c")
+			(uuid "1dd05340-6c09-4b7c-8ed7-6302f3fe0c3e")
 		)
-		(pin "6"
-			(uuid "36519d34-4054-40e8-a187-3b021d95896c")
+		(pin "2"
+			(uuid "77069f84-f361-4139-8dd8-db8a7812de68")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
@@ -5893,7 +3679,7 @@
 	)
 	(symbol
 		(lib_id "2026-11-12_21-36-38:G2RL-1A-E_DC24")
-		(at 127 73.66 90)
+		(at 127 138.43 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -5902,29 +3688,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "ea35f7ba-57ec-406a-ba3e-b1928c83eef9")
-		(property "Reference" "K2"
-			(at 119.38 85.09 0)
+		(fields_autoplaced yes)
+		(uuid "694eec5f-3954-4a45-94d5-4ec156a48a54")
+		(property "Reference" "K3"
+			(at 135.89 148.5899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "G2RL-1A-E DC24"
-			(at 121.92 85.09 0)
+			(at 135.89 151.1299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.524 1.524)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" "relya:RELAY_G2RL-1A-E DC5_OMR"
-			(at 127 73.66 0)
+		(property "Footprint" "RELAY_G2RL-1A-E DC5_OMR"
+			(at 127 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5936,7 +3725,7 @@
 			)
 		)
 		(property "Datasheet" "G2RL-1A-E DC24"
-			(at 127 73.66 0)
+			(at 127 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5948,7 +3737,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 127 73.66 0)
+			(at 127 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5959,22 +3748,119 @@
 			)
 		)
 		(pin "3"
-			(uuid "b17250b5-deaf-4973-94d6-11c280decaa3")
-		)
-		(pin "1"
-			(uuid "3537c31a-5027-4887-9802-8d3b26a7476a")
-		)
-		(pin "8"
-			(uuid "6b340eb3-6d41-473c-9cbe-636ad41ec1cf")
-		)
-		(pin "6"
-			(uuid "f7c76064-986e-4d03-bfca-6ae3043d94fa")
-		)
-		(pin "4"
-			(uuid "9f1a49d8-5808-4d39-87ad-d7e98ac41a0b")
+			(uuid "c1c299fa-1e80-4a3d-ac06-66a4aef6b253")
 		)
 		(pin "5"
-			(uuid "9e4ce922-77a1-4fd1-b8c6-9468294c2333")
+			(uuid "4e7eeb76-5382-4206-ad5d-14e2eb74b99f")
+		)
+		(pin "6"
+			(uuid "f35b22fc-39ac-4237-9251-36dff557b85d")
+		)
+		(pin "4"
+			(uuid "bc35f0ed-90ba-4d7b-968b-fa98bcf4d840")
+		)
+		(pin "1"
+			(uuid "7f5d5c37-262b-4b3e-bae7-e56661684156")
+		)
+		(pin "8"
+			(uuid "4269d566-e9f6-4c64-ad62-629854b99416")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "K3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "2026-11-12_21-36-38:G2RL-1A-E_DC24")
+		(at 104.14 104.14 90)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6b537d90-452c-493c-b2af-7058e7ac13ba")
+		(property "Reference" "K2"
+			(at 113.03 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "G2RL-1A-E DC24"
+			(at 113.03 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "RELAY_G2RL-1A-E DC5_OMR"
+			(at 104.14 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "G2RL-1A-E DC24"
+			(at 104.14 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 104.14 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "4ad84e35-6638-49df-8578-33b4e3011a36")
+		)
+		(pin "5"
+			(uuid "2f1f7b98-deb2-4e4a-bb16-7a8400c74706")
+		)
+		(pin "6"
+			(uuid "e6c29a00-94e3-46db-84d8-ffd20bc78549")
+		)
+		(pin "4"
+			(uuid "16fcf0e8-7321-4a6e-a71e-700a427d21f9")
+		)
+		(pin "1"
+			(uuid "9f470abd-a4b9-4b58-ba65-d581c3cbe16f")
+		)
+		(pin "8"
+			(uuid "0c4e7535-4a7b-437c-af37-2b027bdb80c1")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
@@ -5986,8 +3872,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 127 96.52 0)
+		(lib_id "Connector:Screw_Terminal_01x05")
+		(at 43.18 68.58 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5995,11 +3882,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f6f7d1c4-4979-4c9c-abb5-8983d051e64f")
-		(property "Reference" "#PWR07"
-			(at 127 102.87 0)
-			(hide yes)
+		(uuid "6e58e3c7-7555-4c4d-b3da-f01f00dee2da")
+		(property "Reference" "J2"
+			(at 43.18 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6008,8 +3893,8 @@
 				)
 			)
 		)
-		(property "Value" "GND"
-			(at 127 101.6 0)
+		(property "Value" "Screw_Terminal_01x05"
+			(at 43.18 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6019,7 +3904,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127 96.52 0)
+			(at 43.18 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6030,7 +3915,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 96.52 0)
+			(at 43.18 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6040,8 +3925,99 @@
 				)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 127 96.52 0)
+		(property "Description" "Generic screw terminal, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 43.18 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "5"
+			(uuid "73bb7f05-50e2-456c-bf4d-c2858789555c")
+		)
+		(pin "4"
+			(uuid "f76d5052-963d-45dc-ac60-0e42ba57a9f1")
+		)
+		(pin "2"
+			(uuid "abf4beb6-65b6-4efb-aa88-8347e35904c6")
+		)
+		(pin "1"
+			(uuid "8c9d8666-8e07-43a3-93f9-a016cc27832c")
+		)
+		(pin "3"
+			(uuid "6c749762-03d4-433b-8e4f-9c67c63f8929")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 77.47 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ffa6ac3-5cc6-4c21-8f34-6c378bd86b1d")
+		(property "Reference" "R1"
+			(at 80.01 68.5799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_US"
+			(at 80.01 71.1199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 78.486 70.104 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 77.47 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6052,51 +4028,56 @@
 			)
 		)
 		(pin "1"
-			(uuid "41b3cba5-8ae3-4474-bd93-6d593bbf3e3a")
+			(uuid "4eeb5863-2bca-4ca0-b117-d8d5bf53cc47")
+		)
+		(pin "2"
+			(uuid "218fd9d2-60e1-470a-bb13-6b9568d20c89")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
 				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "#PWR07")
+					(reference "R1")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Jumper:SolderJumper_2_Open")
-		(at 63.5 69.85 0)
+		(lib_id "Device:D")
+		(at 119.38 151.13 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom no)
+		(in_bom yes)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f8e52fa8-c56a-44d6-a0ad-5a80b471aeae")
-		(property "Reference" "JP1"
-			(at 63.5 63.5 0)
+		(uuid "9e4f7288-f471-4fa9-9b4e-b3f24290f7f2")
+		(property "Reference" "D3"
+			(at 121.92 149.8599 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "SolderJumper_2_Open"
-			(at 63.5 66.04 0)
+		(property "Value" "D"
+			(at 121.92 152.3999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 69.85 0)
+			(at 119.38 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6107,7 +4088,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 77.47 0)
+			(at 119.38 151.13 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6117,8 +4098,334 @@
 				)
 			)
 		)
-		(property "Description" "Solder Jumper, 2-pole, open"
-			(at 63.5 74.93 0)
+		(property "Description" "Diode"
+			(at 119.38 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 119.38 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 119.38 151.13 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e7219d8b-fd8f-4bfd-a683-d9cca67c9383")
+		)
+		(pin "2"
+			(uuid "ca5b586f-5731-405d-9242-84f5bc549fea")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "D3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Simulation_SPICE:NPN")
+		(at 119.38 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9e500a1a-9ecf-499a-860b-5fbb2646f352")
+		(property "Reference" "Q3"
+			(at 124.46 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "NPN"
+			(at 124.46 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://ngspice.sourceforge.io/docs/ngspice-html-manual/manual.xhtml#cha_BJTs"
+			(at 182.88 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Bipolar transistor symbol for simulation only, substrate tied to the emitter"
+			(at 119.38 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "NPN"
+			(at 119.38 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Type" "GUMMELPOON"
+			(at 119.38 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=C 2=B 3=E"
+			(at 119.38 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fbfe5cfc-0d75-400a-b673-c614244dd177")
+		)
+		(pin "3"
+			(uuid "7c927e40-2b1a-4f84-a741-09c05ea77ad3")
+		)
+		(pin "2"
+			(uuid "d8f8244b-aafa-44a8-af19-9921f2831e4b")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "Q3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 165.1 104.14 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c7e99c56-5c60-4b19-a3db-8f9980a31d22")
+		(property "Reference" "J4"
+			(at 167.64 104.1399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 167.64 106.6799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 165.1 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "1ecda9ec-becb-45c3-b664-c6587cabfea1")
+		)
+		(pin "2"
+			(uuid "b72c6adc-dd1b-4757-9f78-4f68d326db8f")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 66.04 86.36 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cfca0d62-9a84-4c4e-9ae2-fc4c3ae950da")
+		(property "Reference" "D1"
+			(at 68.58 85.0899 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 68.58 87.6299 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 66.04 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 66.04 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 66.04 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 66.04 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6129,15 +4436,275 @@
 			)
 		)
 		(pin "2"
-			(uuid "b1ff13c3-d0f8-4f98-9d68-d3de4d469189")
+			(uuid "b3a4466c-5d32-45d8-915d-de5fed119eec")
 		)
 		(pin "1"
-			(uuid "88c75ad0-dc68-4bde-ab85-1184b06802ff")
+			(uuid "4e5e4459-e2dc-47f6-a0c8-4957e390a1ad")
 		)
 		(instances
 			(project "Pizza_oven_PCB"
 				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
-					(reference "JP1")
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 121.92 177.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e4420e09-8b26-4a59-8ad9-d54747d45ebf")
+		(property "Reference" "#PWR03"
+			(at 121.92 184.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 121.92 182.88 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 121.92 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 121.92 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 121.92 177.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f9945ac6-3cb7-400c-9535-e1f00fe0cbf1")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 69.85 115.57 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ed1368e8-97ca-4e4a-a8ac-c1ab75eb2d1c")
+		(property "Reference" "#PWR01"
+			(at 69.85 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 69.85 120.65 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 69.85 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e448b738-c98d-4dea-b5ad-0d85c46a804d")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D")
+		(at 92.71 115.57 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f8ae8073-c635-4ed4-b1bc-56b9a4021742")
+		(property "Reference" "D2"
+			(at 95.25 114.2999 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "D"
+			(at 95.25 116.8399 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Diode"
+			(at 92.71 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Device" "D"
+			(at 92.71 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2bc29b47-15f0-47ad-93f2-6801e06c72eb")
+		)
+		(pin "1"
+			(uuid "b6cef17f-59be-420e-a234-b7017478dc92")
+		)
+		(instances
+			(project "Pizza_oven_PCB"
+				(path "/d82acdd2-49d4-4b2a-8f12-2a096fc6b693"
+					(reference "D2")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,8 @@
+﻿Designator,Footprint,Quantity,Value,LCSC Part #
+"D1, D2, D3",D_DO-41_SOD81_P7.62mm_Horizontal,3,D,
+"J1, J4","TerminalBlock_Phoenix_MKDS-1,5-2_1x02_P5.00mm_Horizontal",2,Screw_Terminal_01x02,
+J2,"TerminalBlock_Phoenix_MKDS-1,5-5_1x05_P5.00mm_Horizontal",1,Screw_Terminal_01x05,
+J3,"TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal",1,Screw_Terminal_01x03,
+"K1, K2, K3",RELAY_G2RL-1A-E DC5_OMR,3,G2RL-1A-E DC24,
+"Q1, Q2, Q3",TO-92L,3,NPN,
+"R1, R2, R3",R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal,3,R_US,
