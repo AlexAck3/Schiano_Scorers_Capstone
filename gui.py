@@ -2,12 +2,10 @@ import sys
 from gpiozero import Button, RotaryEncoder
 from PyQt6.QtWidgets import (
     QApplication, QWidget, QLabel, QLineEdit, QPushButton,
-    QVBoxLayout
+    QVBoxLayout, QHBoxLayout
 )
 from PyQt6.QtGui import QFont
-from PyQt6.QtCore import Qt, QTimer, pyqtSignal
-
-TESTING_TEMP_READING = 75   # REPLACE THIS CONSTANT WITH THE TC READING
+from PyQt6.QtCore import Qt, QTimer, QThread, pyqtSignal
 
 # ------ ENCODER INCREMENTS (per detent) -------
 TEMP_TGT_INCREMENT = 5      # F
@@ -20,11 +18,26 @@ MAX_TGT_TEMP = 900          # F
 MAX_TIMER_AMT = 180         # Minutes
 # --------------------------------------
 
+# ------------- SENSOR CONFIG -------------
+# MAX31856 chip-select pins (BCM GPIO numbers). All three amps share the SPI0 bus
+# (SCLK=GPIO11, MISO=GPIO9, MOSI=GPIO10); only CS is unique per amp.
+# Pins already used elsewhere: 16/20/21 (buttons), 5/6 (encoder), 19/26 (PWM/coil select),
+# 2/3 (I2C), 7-11 (SPI0).
+TC_CS_PINS = {
+    "oven": 8,      # CE0   -> "Temperature Reading"
+    "top": 25,      # Physical pin 22 -> "Top Coil Temp"
+    "bottom": 24,   # Physical pin 18 -> "Bottom Coil Temp"
+}
+IR_I2C_ADDR = 0x5A              # Check with: i2cdetect -y 1
+SENSOR_POLL_MS = 500            # Delay between sensor sweeps
+# -----------------------------------------
+
 # ------------- SELECTION STYLES -------------
 ENTRY_STYLE = "QLineEdit { border: 2px solid #999999; border-radius: 4px; }"
 ENTRY_STYLE_SELECTED = (
     "QLineEdit { border: 5px solid #2980b9; border-radius: 4px; background-color: #eaf4fc; }"
 )
+DISPLAY_STYLE = "QLineEdit { border: none; background: transparent; }"
 START_STYLE = (
     "QPushButton { color: white; background-color: #27ae60; border-radius: 8px; border: 5px solid #27ae60; }"
     "QPushButton:disabled { background-color: #7f8c8d; border: 5px solid #7f8c8d; }"
@@ -53,6 +66,86 @@ encoder = RotaryEncoder(a=5, b=6)
 SEL_TEMP, SEL_TIMER, SEL_COIL, SEL_START, SEL_STOP = range(5)
 
 
+def c_to_f(c):
+    return c * 9 / 5 + 32
+
+
+class SensorWorker(QThread):
+    """Reads the 3 thermocouple amps and the IR sensor on a background thread.
+
+    Each MAX31856 one-shot read blocks for ~150 ms, so doing this on the GUI thread
+    would make the encoder/buttons feel laggy. Results are emitted as a dict of
+    temperatures in F (None for any sensor that failed to read):
+        {"oven": f, "top": f, "bottom": f, "stone": f}
+    """
+    sig_readings = pyqtSignal(dict)
+
+    def __init__(self, parent=None):
+        super().__init__(parent)
+        self._running = True
+
+    def stop(self):
+        self._running = False
+
+    def _init_tcs(self):
+        import board
+        import digitalio
+        import adafruit_max31856
+
+        spi = board.SPI()
+
+        # Drive EVERY chip-select high (idle) before talking to any amp, otherwise a
+        # floating/low CS on another amp will fight for the shared MISO line.
+        cs_pins = {}
+        for name, gpio in TC_CS_PINS.items():
+            cs = digitalio.DigitalInOut(getattr(board, f"D{gpio}"))
+            cs.direction = digitalio.Direction.OUTPUT
+            cs.value = True
+            cs_pins[name] = cs
+
+        return {name: adafruit_max31856.MAX31856(spi, cs) for name, cs in cs_pins.items()}
+
+    def _init_ir(self):
+        from smbus2 import SMBus
+        from mlx90614 import MLX90614
+        bus = SMBus(1)
+        return bus, MLX90614(bus, address=IR_I2C_ADDR)
+
+    def run(self):
+        tcs, bus, ir = {}, None, None
+
+        try:
+            tcs = self._init_tcs()
+        except Exception as e:
+            print(f"[sensors] Thermocouple init failed: {e}")
+
+        try:
+            bus, ir = self._init_ir()
+        except Exception as e:
+            print(f"[sensors] IR sensor init failed: {e}")
+
+        while self._running:
+            data = {"oven": None, "top": None, "bottom": None, "stone": None}
+
+            for name, tc in tcs.items():
+                try:
+                    data[name] = c_to_f(tc.temperature)
+                except Exception as e:
+                    print(f"[sensors] TC '{name}' read failed: {e}")
+
+            if ir is not None:
+                try:
+                    data["stone"] = c_to_f(ir.get_obj_temp())
+                except Exception as e:
+                    print(f"[sensors] IR read failed: {e}")
+
+            self.sig_readings.emit(data)
+            self.msleep(SENSOR_POLL_MS)
+
+        if bus is not None:
+            bus.close()
+
+
 class PizzaOvenGUI(QWidget):
     # gpiozero callbacks fire on a background thread. Qt widgets must only be touched
     # from the GUI thread, so the callbacks emit these signals instead (Qt queues them
@@ -69,7 +162,10 @@ class PizzaOvenGUI(QWidget):
 
         # Control Variable
         self.temp_target = 500          # F
-        self.temp_reading = TESTING_TEMP_READING         # F (Reaplace with TC Reading)
+        self.temp_reading = None        # F - oven TC (None until first reading)
+        self.top_coil_temp = None       # F - top coil TC
+        self.bottom_coil_temp = None    # F - bottom coil TC
+        self.stone_temp = None          # F - IR sensor (pizza stone)
         self.timer_preset = 30          # Start with 30 minutes
         self.timer_remaining = self.timer_preset * 60  # seconds
         self.top_coil = 50              # Percentages
@@ -85,6 +181,11 @@ class PizzaOvenGUI(QWidget):
         self.setup_hardware()
         self.refresh()
         self.update_selection()
+
+        # Start reading sensors
+        self.sensor_worker = SensorWorker(self)
+        self.sensor_worker.sig_readings.connect(self.on_sensor_readings)
+        self.sensor_worker.start()
 
     # ---------- UI helpers ----------
     def make_label(self, text): # Used for the entry labels
@@ -112,6 +213,13 @@ class PizzaOvenGUI(QWidget):
         box.addWidget(entry)
         return box, entry
 
+    # Same as make_control, but for non-selectable display-only values (no border)
+    def make_display_control(self, title):
+        box, entry = self.make_control(title)
+        entry.setCursor(Qt.CursorShape.ArrowCursor)
+        entry.setStyleSheet(DISPLAY_STYLE)
+        return box, entry
+
     def build_ui(self):
         layout = QVBoxLayout()
         layout.setContentsMargins(25, 20, 25, 25)
@@ -127,29 +235,36 @@ class PizzaOvenGUI(QWidget):
         box, self.target_entry = self.make_control("Temperature Target")
         layout.addLayout(box)
 
-        # 3) Temperature reading (not selectable, no user input needed) - Direct TC Feedback
-        layout.addWidget(self.make_label("Temperature Reading"))
-        self.reading_entry = self.make_entry()
-        self.reading_entry.setReadOnly(True)
-        self.reading_entry.setFocusPolicy(Qt.FocusPolicy.NoFocus)
-        self.reading_entry.setCursor(Qt.CursorShape.ArrowCursor)
-        self.reading_entry.setStyleSheet("QLineEdit { border: none; background: transparent; }")
-        layout.addWidget(self.reading_entry)
+        # 3) Temperature reading (oven TC) and pizza stone (IR) - not selectable, side by side
+        row = QHBoxLayout()
+        row.setSpacing(12)
+        box, self.reading_entry = self.make_display_control("Temperature Reading")
+        row.addLayout(box)
+        box, self.stone_entry = self.make_display_control("Pizza Stone")
+        row.addLayout(box)
+        layout.addLayout(row)
 
         # 4) Timer - Allows user to modify how much time to cook pizza
         box, self.timer_entry = self.make_control("Timer")
         layout.addLayout(box)
 
-        # 5) Coils (linked) - Only the top coil is selectable; the bottom coil follows (100 - top)
-        box, self.top_entry = self.make_control("Top Coil")
-        layout.addLayout(box)
+        # 5) Coils (linked) - Only the top coil % is selectable; the bottom coil follows (100 - top)
+        #    Each row: coil power % on the left, that coil's TC temperature on the right
+        row = QHBoxLayout()
+        row.setSpacing(12)
+        box, self.top_entry = self.make_control("Top Coil %")
+        row.addLayout(box)
+        box, self.top_temp_entry = self.make_display_control("Top Coil Temp")
+        row.addLayout(box)
+        layout.addLayout(row)
 
-        box, self.bottom_entry = self.make_control("Bottom Coil")
-        self.bottom_entry.setReadOnly(True)
-        self.bottom_entry.setFocusPolicy(Qt.FocusPolicy.NoFocus)
-        self.bottom_entry.setCursor(Qt.CursorShape.ArrowCursor)
-        self.bottom_entry.setStyleSheet("QLineEdit { border: none; background: transparent; }")
-        layout.addLayout(box)
+        row = QHBoxLayout()
+        row.setSpacing(12)
+        box, self.bottom_entry = self.make_display_control("Bottom Coil %")
+        row.addLayout(box)
+        box, self.bottom_temp_entry = self.make_display_control("Bottom Coil Temp")
+        row.addLayout(box)
+        layout.addLayout(row)
 
         layout.addStretch()
 
@@ -200,9 +315,22 @@ class PizzaOvenGUI(QWidget):
         encoder.when_rotated_clockwise = lambda: self.sig_rotate.emit(1)
         encoder.when_rotated_counter_clockwise = lambda: self.sig_rotate.emit(-1)
 
+    def on_sensor_readings(self, data):
+        # Runs on the GUI thread (signal from SensorWorker)
+        self.temp_reading = data.get("oven")
+        self.top_coil_temp = data.get("top")
+        self.bottom_coil_temp = data.get("bottom")
+        self.stone_temp = data.get("stone")
+        self.refresh()
+
+    def closeEvent(self, event):
+        self.sensor_worker.stop()
+        self.sensor_worker.wait(2000)
+        super().closeEvent(event)
+
     # ---------- Selection ----------
     def select_previous(self):
-        # "Up" moves toward the top of the screen; stops at the first item
+        # "Up" moves toward the top of the screen; wraps to the last item
         if self.sel_index > 0:
             self.sel_index -= 1
             self.update_selection()
@@ -211,7 +339,7 @@ class PizzaOvenGUI(QWidget):
             self.update_selection()
 
     def select_next(self):
-        # "Down" moves toward the bottom of the screen; stops at the last item
+        # "Down" moves toward the bottom of the screen; wraps to the first item
         if self.sel_index < len(self.selectables) - 1:
             self.sel_index += 1
             self.update_selection()
@@ -240,14 +368,22 @@ class PizzaOvenGUI(QWidget):
         elif self.sel_index == SEL_STOP:
             self.stop_timer()
 
+    # Format a temperature (F) for display; "--" if there's no valid reading yet
+    @staticmethod
+    def fmt_temp(value):
+        return "-- °F" if value is None else f"{value:.0f} °F"
+
     # Refresh all labels with updated info when necessary
     def refresh(self):
         self.target_entry.setText(f"{self.temp_target} °F")
-        self.reading_entry.setText(f"{self.temp_reading} °F")
+        self.reading_entry.setText(self.fmt_temp(self.temp_reading))
+        self.stone_entry.setText(self.fmt_temp(self.stone_temp))
         mins, secs = divmod(self.timer_remaining, 60)
         self.timer_entry.setText(f"{mins:02d}:{secs:02d}")
         self.top_entry.setText(f"{self.top_coil}%")
         self.bottom_entry.setText(f"{self.bottom_coil}%")
+        self.top_temp_entry.setText(self.fmt_temp(self.top_coil_temp))
+        self.bottom_temp_entry.setText(self.fmt_temp(self.bottom_coil_temp))
 
     # ---------- Logic ----------
     def change_temp_target(self, delta):
